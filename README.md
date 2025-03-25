@@ -23,7 +23,8 @@ git clone https://github.com/your-username/your-repo.git
 cd your-repo
 2. Create and activate a virtual environment:
 python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts�ctivate
+source venv/bin/activate python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. Install dependencies:
 pip install -r requirements.txt
 4. Run the Flask application:
@@ -36,6 +37,4 @@ Use Cases
 - Automated anomaly detection in crowded environments
 - Behavioral monitoring for enhanced safety
 
-Contributions
-Contributions and suggestions are welcome! Feel free to open issues or submit pull requests.
 
