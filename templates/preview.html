@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+        <meta name="copyright" content="MACode ID, https://macodeid.com/">
+      
+        <title>Intelligence traffic System</title>
+      
+        <link href="{{ url_for('static', filename='maicons.css')}}" rel="stylesheet" />
+      
+        <link href="{{ url_for('static', filename='bootstrap.css')}}" rel="stylesheet" />
+      
+        <link href="{{ url_for('static', filename='owl.carousel.css')}}" rel="stylesheet" />
+      
+        <link href="{{ url_for('static', filename='animate.css')}}" rel="stylesheet" />
+      
+        <link href="{{ url_for('static', filename='theme.css')}}" rel="stylesheet" />
+      </head>
+<header>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-primary">Campus Abnormal Behavior Recognition  </span>Detection</a>
+
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('upload_image') }}">Prediction</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('upload_image1') }}">Prediction1</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('logout') }}">logout</a>
+            </li>
+           
+          </ul>
+        </div> <!-- .navbar-collapse -->
+      </div> <!-- .container -->
+    </nav>
+  </header>
+  <body>
+    <header class="feature-box top">
+        <h1><strong>Object Detection using YOLOv8</strong></h1>
+    </header>
+    <header class="feature-box second">
+         <h1><strong>Output Video</strong></h1>
+    </header>
+    
+      <section class="col-sm " >
+              <img src="{{ url_for('webapp') }}"   alt="Upload video">
+    
+      </section>
+    
+    </body>
+</html>
